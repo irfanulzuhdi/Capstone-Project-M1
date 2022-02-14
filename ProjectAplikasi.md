@@ -44,7 +44,7 @@ def dataKaryawan():
             print(f"\t{item['NIK']} \t|  {item['nama']} \t|  {item['gender']} \t|  {item['alamat']} \t|  {item['jabatan']}")
 
 
-### Menampilkan MENU READ DATA (Record Data Karyawan)
+### Menampilkan Record Data Karyawan (Menu Read Data)
 ### =================================================
 
 def MenudataKaryawan():
