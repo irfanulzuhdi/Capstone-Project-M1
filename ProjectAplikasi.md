@@ -40,7 +40,7 @@ def dataKaryawan():
             print(f"\t{item['NIK']} \t|  {item['nama']} \t|  {item['gender']} \t|  {item['alamat']} \t|  {item['jabatan']}")
 
 
-# menampilkan MENU Record Data Karyawan
+# Menampilkan MENU Record Data Karyawan
 # =====================================
 
 def MenudataKaryawan():
@@ -70,7 +70,7 @@ def MenudataKaryawan():
         MenudataKaryawan()
 
 
-# menampilkan MENU 2 Record Seluruh Data
+# Menampilkan MENU 2 Record Seluruh Data
 # ======================================
 def dataTertentu():
     dataKaryawan()
@@ -100,8 +100,8 @@ def dataTertentu():
     MenudataKaryawan()
 
 
-# menambah data karyawan
-# =======================
+# Menambahkan data karyawan
+# =========================
 def inputData():
     NIK_kryn = int(input('\t1. Nomor Induk Karyawan (NIK): '))
     for i in range(len(listKaryawan)):
@@ -175,7 +175,7 @@ def tambahData():
             tambahData()
 
 
-# # mengubah data karyawan
+# # Mengubah data karyawan
 # # ======================
 
 def updateData():
@@ -338,7 +338,7 @@ def updateData():
 
 
 
-# # menghapus data karyawan
+# # Menghapus data karyawan
 # # =======================
 
 def deleteData():
