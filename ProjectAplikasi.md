@@ -1,3 +1,7 @@
+# APLIKASI DATA KARYAWAN PERUSAHAAN
+
+### List Karyawan
+
 listKaryawan = [
     {
         'NIK': 12345,
@@ -40,10 +44,11 @@ def dataKaryawan():
             print(f"\t{item['NIK']} \t|  {item['nama']} \t|  {item['gender']} \t|  {item['alamat']} \t|  {item['jabatan']}")
 
 
-# Menampilkan MENU Record Data Karyawan
-# =====================================
+### Menampilkan MENU READ DATA (Record Data Karyawan)
+### =================================================
 
 def MenudataKaryawan():
+
     print('''
     ===============================================================
     ---- MENU Report Data Karyawan --------------------------------
@@ -70,9 +75,11 @@ def MenudataKaryawan():
         MenudataKaryawan()
 
 
-# Menampilkan MENU 2 Record Seluruh Data
-# ======================================
+### Menampilkan MENU 2 READ DATA (Search Data)
+### =========================================
+
 def dataTertentu():
+
     dataKaryawan()
     inputNIK = int(input('''
     ===============================================================
@@ -100,9 +107,11 @@ def dataTertentu():
     MenudataKaryawan()
 
 
-# Menambahkan data karyawan
-# =========================
+### Menambahkan data karyawan (MENU CREATE DATA)
+### ============================================
+
 def inputData():
+
     NIK_kryn = int(input('\t1. Nomor Induk Karyawan (NIK): '))
     for i in range(len(listKaryawan)):
         if NIK_kryn == listKaryawan[i]['NIK']:
@@ -145,15 +154,14 @@ def inputData():
 
 
 def tambahData():
+
     while True:
         tambahKaryawan = input('''
     ===============================================================
     ---- MENU Penambahan Data Karyawan ----------------------------
-
     |-- Menu:
         1. Tambah Data Karyawan
         2. Kembali ke Menu Utama
-
     ===============================================================
     Silahkan pilih Sub Menu Create Data (1-2): ''')
 
@@ -175,10 +183,11 @@ def tambahData():
             tambahData()
 
 
-# # Mengubah data karyawan
-# # ======================
+### Mengubah Data Karyawan (Menu Update Data)
+### =========================================
 
 def updateData():
+
     while True:
         editdataKaryawan = input('''
     ===============================================================
@@ -338,8 +347,8 @@ def updateData():
 
 
 
-# # Menghapus data karyawan
-# # =======================
+### Menghapus Data Karyawan (Menu Delete Data)
+### ==========================================
 
 def deleteData():
 
@@ -393,7 +402,11 @@ def deleteData():
         deleteData()
 
 
+### Main Menu
+### =========
+
 def MenuUtama():
+
     PilihMenu = input('''
     ===============================================================
     ------------------- Data Karyawan E-MONEY ---------------------
